@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="LifelongCrossNav: persistent 3D semantic memory for sequential multi-object navigation in unknown multi-floor environments.">
+  <meta name="theme-color" content="#0a1725">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LifelongCrossNav">
+  <meta property="og:description" content="Persistent 3D Semantic Memory for Cross-Floor Multi-Object Navigation">
+  <meta property="og:image" content="./assets/figure/overall_illustration.png">
+  <title>LifelongCrossNav | Project Page</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="nav-shell">
+      <a class="brand" href="#top" aria-label="LifelongCrossNav home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>LifelongCrossNav</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="#demos">Demos</a>
+        <a href="#abstract">Abstract</a>
+        <a href="#method">Method</a>
+        <a href="#results">Results</a>
+        <a href="#citation">Citation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="top">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+      <div class="page-shell hero-content">
+        <div class="eyebrow hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Sequential Multi-Floor Multi-Object Navigation
+        </div>
+
+        <h1>
+          <span class="project-name">LifelongCrossNav</span>
+          <span class="paper-title">
+            <span>Persistent 3D Semantic Memory for</span>
+            <span>Cross-Floor Multi-Object Navigation</span>
+          </span>
+        </h1>
+
+        <div class="authors" aria-label="Authors">
+          <span>Zehui Li<sup>1</sup></span>
+          <span>Zihao Sun<sup>1</sup></span>
+          <span>Jiawei Xu<sup>1</sup></span>
+          <span>Zheqi He<sup>2</sup></span>
+          <span>Xiaoqiang Zhang<sup>1</sup></span>
+          <span>Jing-Shu Zheng<sup>2</sup></span>
+          <span>Lu Liu<sup>2</sup></span>
+          <span>Dahui Gao<sup>2</sup></span>
+          <span>Xiuwan Chen<sup>1</sup></span>
+        </div>
+
+        <div class="affiliations">
+          <span><sup>1</sup> Peking University</span>
+          <span><sup>2</sup> Beijing Academy of Artificial Intelligence</span>
+        </div>
+
+        <div class="hero-actions" aria-label="Project resources">
+          <!-- Replace the disabled Paper button with the arXiv URL after release. -->
+          <span class="button button-muted" title="Paper link coming soon" aria-disabled="true">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6M9 8h2"/></svg>
+            Paper <small>Coming soon</small>
+          </span>
+          <!-- Replace the disabled Code button with the public code repository URL after release. -->
+          <span class="button button-muted" title="Code link coming soon" aria-disabled="true">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></svg>
+            Code <small>Coming soon</small>
+          </span>
+          <a class="button button-primary" href="https://drive.google.com/file/d/1mZOn_BVWHqdp4kYCygWvf9I-z0IEl3Lc/view" target="_blank" rel="noreferrer">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 19h14"/></svg>
+            Dataset
+          </a>
+          <a class="button button-ghost" href="#demos">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 7 8 5-8 5z"/></svg>
+            Demos
+          </a>
+        </div>
+
+        <div class="hero-stats" aria-label="HM3D-MFMON benchmark summary">
+          <div><strong>927</strong><span>three-goal episodes</span></div>
+          <div><strong>36</strong><span>multi-floor scenes</span></div>
+          <div><strong>288</strong><span>cross-floor-required</span></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section demo-section" id="demos">
+      <div class="page-shell">
+        <div class="section-heading centered-heading light-heading reveal">
+          <div class="eyebrow">Video demonstrations</div>
+          <h2>Highlight: Cross-Floor Multi-Object Navigation</h2>
+        </div>
+
+        <article class="featured-demo reveal">
+          <div class="video-heading simple-video-heading">
+            <h3>Video 1</h3>
+          </div>
+          <div class="video-frame featured-video-frame">
+            <video controls preload="metadata" playsinline>
+              <source src="./assets/video/1.mp4" type="video/mp4">
+              Your browser does not support the HTML5 video element.
+            </video>
+          </div>
+        </article>
+
+        <div class="demo-grid">
+          <article class="demo-card reveal">
+            <div class="video-heading compact-video-heading"><h3>Video 2</h3></div>
+            <div class="video-frame compact-video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="./assets/video/484.mp4" type="video/mp4">
+                Your browser does not support the HTML5 video element.
+              </video>
+            </div>
+          </article>
+          <article class="demo-card reveal">
+            <div class="video-heading compact-video-heading"><h3>Video 3</h3></div>
+            <div class="video-frame compact-video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="./assets/video/625.mp4" type="video/mp4">
+                Your browser does not support the HTML5 video element.
+              </video>
+            </div>
+          </article>
+          <article class="demo-card reveal">
+            <div class="video-heading compact-video-heading"><h3>Video 4</h3></div>
+            <div class="video-frame compact-video-frame">
+              <video controls preload="metadata" playsinline>
+                <source src="./assets/video/695.mp4" type="video/mp4">
+                Your browser does not support the HTML5 video element.
+              </video>
+            </div>
+          </article>
+        </div>
+        <p class="demo-caption reveal">Habitat simulator demonstrations of sequential object search. Every example includes at least one floor transition.</p>
+      </div>
+    </section>
+
+    <section class="section" id="abstract">
+      <div class="page-shell narrow-shell reveal">
+        <div class="section-heading centered-heading">
+          <div class="eyebrow">The task</div>
+          <h2>Abstract</h2>
+        </div>
+        <p class="abstract-copy">
+          LifelongCrossNav studies sequential multi-object ObjectNav in unknown multi-floor indoor environments. The agent receives an ordered sequence of object-goal queries and continuously maintains a shared sparse 3D semantic voxel memory. This memory accumulates geometric structure, traversability states, and vision-language features, allowing later queries to reuse previously discovered scene information instead of rebuilding the map. To support navigation across floors, LifelongCrossNav integrates support-aware 3D traversability mapping, stair-specific perception, and direction-aware stair traversal within a unified navigation policy. We also introduce <strong>HM3D-MFMON</strong>, a benchmark for sequential multi-floor multi-object navigation built on HM3D scenes. Experiments show that LifelongCrossNav consistently outperforms a persistent planar semantic-map baseline, demonstrating the value of persistent 3D semantic memory and cross-floor traversability modeling.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="contributions">
+      <div class="page-shell reveal">
+        <div class="section-heading centered-heading">
+          <div class="eyebrow">Contributions</div>
+          <h2>A benchmark, a unified system, and measurable gains</h2>
+        </div>
+
+        <div class="contribution-grid">
+          <article class="contribution-card contribution-blue">
+            <div class="contribution-number">01</div>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M8 10h12v12H8zM28 10h12v12H28zM8 30h12v8H8zM28 30h12v8H28z"/><path d="M20 16h8M14 22v8M34 22v8"/></svg>
+            </div>
+            <h3>HM3D-MFMON Benchmark</h3>
+            <p>927 three-goal episodes from 36 multi-floor HM3D scenes, including a 288-episode Cross-Floor-Required subset and a post-hoc stage-wise evaluation protocol.</p>
+          </article>
+
+          <article class="contribution-card contribution-purple">
+            <div class="contribution-number">02</div>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="m24 5 15 8-15 8L9 13zM9 23l15 8 15-8M9 33l15 8 15-8"/></svg>
+            </div>
+            <h3>Persistent 3D Memory</h3>
+            <p>A shared sparse voxel representation unifies support-aware geometry, accumulated vision-language features, stair perception, and historical semantic retrieval.</p>
+          </article>
+
+          <article class="contribution-card contribution-orange">
+            <div class="contribution-number">03</div>
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 48 48"><path d="M7 35h10V25h10V15h14"/><path d="m35 9 6 6-6 6"/><circle cx="10" cy="38" r="3"/></svg>
+            </div>
+            <h3>Validated Performance Gains</h3>
+            <p>Experiments demonstrate improved multi-object and cross-floor navigation over a persistent planar baseline, while History POIs improve path efficiency for later goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section method-section" id="method">
+      <div class="page-shell reveal">
+        <div class="section-heading light-heading method-heading">
+          <div class="eyebrow">Method</div>
+          <h2>Overview of LifelongCrossNav</h2>
+        </div>
+
+        <figure class="framework-card">
+          <img src="./assets/figure/framework.png" alt="LifelongCrossNav system framework showing inputs, 3D voxel mapping, persistent semantic memory, and unified navigation policy" width="5012" height="2404" loading="lazy">
+          <figcaption class="method-caption">
+            Given RGB-D observations, the agent pose, and the current goal text, LifelongCrossNav jointly updates a support-aware 3D voxel map and persistent 3D semantic memory. The geometric branch constructs multi-floor traversability from observed surfaces, ray-cast free space, and semantic-geometric stair evidence, while the semantic branch lifts and fuses goal-independent vision-language features into 3D surface voxels. The unified navigation policy selects among Basic Frontiers, Stair Frontiers, History POIs, and Live POIs and performs mode-aware 3D planning for basic exploration, stair exploration, POI navigation, and final object approach. After the current object goal is completed, the accumulated environmental memory is retained and the next object goal is activated.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section results-section" id="results">
+      <div class="page-shell">
+        <div class="section-heading centered-heading reveal">
+          <div class="eyebrow">Evaluation</div>
+          <h2>Results on HM3D-MFMON</h2>
+        </div>
+
+        <article class="result-block reveal" aria-labelledby="all-results-title">
+          <div class="result-heading">
+            <div>
+              <span class="result-index">01 / Full benchmark</span>
+              <h3 id="all-results-title">Results on 927 Episodes</h3>
+            </div>
+          </div>
+
+          <figure class="table-card">
+            <div class="chart-label">Overall Metrics</div>
+            <img src="./assets/table/927.png" alt="Overall SR, SPL, PR, and PPL results on all 927 HM3D-MFMON episodes" width="1888" height="651" loading="lazy">
+          </figure>
+
+          <div class="chart-grid">
+            <figure class="chart-card">
+              <div class="chart-label">Conditional Success Rate</div>
+              <img src="./assets/figure/all_cond_sr.svg" alt="Conditional success rate by object number on all 927 episodes" loading="lazy">
+            </figure>
+            <figure class="chart-card">
+              <div class="chart-label">Conditional SPL</div>
+              <img src="./assets/figure/all_cond_spl.svg" alt="Conditional SPL by object number on all 927 episodes" loading="lazy">
+            </figure>
+          </div>
+          <p class="result-caption">Performance on all 927 three-goal episodes across 36 multi-floor HM3D scenes.</p>
+        </article>
+
+        <aside class="ablation-note reveal">
+          <span class="note-badge">Ablation note</span>
+          <p><strong>w/o H-POI</strong> removes historical POI generation while keeping all other modules unchanged, isolating the effect of historical semantic retrieval.</p>
+        </aside>
+
+        <article class="result-block reveal" aria-labelledby="cross-results-title">
+          <div class="result-heading">
+            <div>
+              <span class="result-index">02 / Hard subset</span>
+              <h3 id="cross-results-title">Results on 288 Cross-Floor-Required Episodes</h3>
+            </div>
+          </div>
+
+          <figure class="table-card compact-table">
+            <div class="chart-label">Overall Metrics</div>
+            <img src="./assets/table/288.png" alt="Overall SR, SPL, PR, and PPL results on 288 cross-floor-required episodes" width="1270" height="439" loading="lazy">
+          </figure>
+
+          <div class="chart-grid">
+            <figure class="chart-card">
+              <div class="chart-label">Conditional Success Rate</div>
+              <img src="./assets/figure/cfr_cond_sr.svg" alt="Conditional success rate by object number on 288 cross-floor-required episodes" loading="lazy">
+            </figure>
+            <figure class="chart-card">
+              <div class="chart-label">Conditional SPL</div>
+              <img src="./assets/figure/cfr_cond_spl.svg" alt="Conditional SPL by object number on 288 cross-floor-required episodes" loading="lazy">
+            </figure>
+          </div>
+          <p class="result-caption">Performance on the Cross-Floor-Required subset, where completing the full target sequence requires at least one floor transition.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section citation-section" id="citation">
+      <div class="page-shell citation-grid reveal">
+        <div class="citation-copy">
+          <div class="eyebrow">Reference</div>
+          <h2>Citation</h2>
+          <p>If you find LifelongCrossNav or HM3D-MFMON useful in your research, please consider citing our work.</p>
+          <p class="citation-status">BibTeX will be updated when the paper is publicly available.</p>
+        </div>
+        <div class="bibtex-card">
+          <button type="button" class="copy-button" data-copy-bibtex>Copy BibTeX</button>
+          <pre><code id="bibtex-entry">@article{li2026lifelongcrossnav,
+  title   = {LifelongCrossNav: Persistent 3D Semantic Memory for
+             Cross-Floor Multi-Object Navigation},
+  author  = {Li, Zehui and Sun, Zihao and Xu, Jiawei and He, Zheqi and
+             Zhang, Xiaoqiang and Zheng, Jing-Shu and Liu, Lu and
+             Gao, Dahui and Chen, Xiuwan},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}</code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell footer-inner">
+      <div>
+        <a class="brand footer-brand" href="#top">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>LifelongCrossNav</span>
+        </a>
+        <p>Persistent 3D semantic memory for navigation beyond a single floor.</p>
+      </div>
+      <p class="footer-meta">Academic project page · <span data-year>2026</span></p>
+    </div>
+  </footer>
+</body>
+</html>
